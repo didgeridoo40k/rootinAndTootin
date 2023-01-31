@@ -25,8 +25,21 @@ label start:
     # These display lines of dialogue.
 
     e "You've created a new Ren'Py game."
+    e "This is the first background image."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    scene bg_forest_landscape2
+    show eileen happy
+    e "This is the second background image."
+
+    scene bg_forest_landscape3
+    show eileen happy
+    e "This is the third background image."
+
+    scene bg_forest_landscape4
+    show eileen happy
+    e "This is the forth background image."
+    e "Thanks for testing!"
+    e "The game is ending now."
 
     # This ends the game.
 
