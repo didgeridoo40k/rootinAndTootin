@@ -38,6 +38,7 @@ label start:
     scene bg_forest_landscape4
     show eileen happy
     e "This is the forth background image."
+    e "They look good!"
     e "Thanks for testing!"
     e "The game is ending now."
 
