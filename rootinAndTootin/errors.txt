@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 11: expected 'word' not found.
-    define ?? = Character("??")
-           ^
+File "game/script.rpy", line 13: invalid syntax
+    Aria Supprised.png
+          ^
+
+File "game/script.rpy", line 14: invalid syntax
+    Aria Smiling.png
+          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 13:30:45 2023
+Sat Feb  4 16:50:23 2023
