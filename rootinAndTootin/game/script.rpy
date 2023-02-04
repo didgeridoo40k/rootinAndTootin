@@ -10,7 +10,9 @@ define AM = Character("Aria’s mom")
 define SD = Character("Sam’s dad")
 define BGU = Character("???")
 
-image Aira Supprised = "Aria Supprised.png"
+image aria supprised = "aria_supprised.png"
+image aria smiling = "aria_smiling.png"
+image aria = "aria.png"
 
 # The game starts here.
 
@@ -26,8 +28,14 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show Aira Supprised
-    A "This is a test."
+    show aria
+    A "Hey, it is me. Aria!"
+    show aria supprised
+    A "Now I am supprised!"
+    show aria smiling
+    A "Now I am smiling."
+    show aria
+    A "Good testing!"
 
     # These display lines of dialogue.
 
