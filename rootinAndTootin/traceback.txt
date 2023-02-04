@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 28, in script
+    a "This is a test."
+Exception: Sayer 'a' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 28, in script
+    a "This is a test."
+  File "E:\Programs\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "E:\Programs\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'a' is not defined.
+
+Windows-10-10.0.19044 AMD64
+Ren'Py 8.0.3.22090809
+rootinAndTootin 1.0
+Sat Feb  4 13:32:06 2023
