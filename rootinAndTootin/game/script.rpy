@@ -10,6 +10,8 @@ define AM = Character("Aria’s mom")
 define SD = Character("Sam’s dad")
 define BGU = Character("???")
 
+image Aira Supprised = "Aria Supprised.png"
+
 # The game starts here.
 
 label start:
