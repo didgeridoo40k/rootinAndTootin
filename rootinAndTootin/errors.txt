@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: invalid syntax
-    Aria Supprised.png
-          ^
+File "game/script.rpy", line 43: expected ':' not found.
+    label stand_and_fight
+                         ^
 
-File "game/script.rpy", line 14: invalid syntax
-    Aria Smiling.png
-          ^
+File "game/script.rpy", line 51: expected ':' not found.
+    label jump_and_swim
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 16:50:23 2023
+Sat Feb  4 17:25:42 2023
