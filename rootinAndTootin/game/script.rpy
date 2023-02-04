@@ -8,7 +8,7 @@ define S = Character("Sam")
 define AD = Character("Aria’s dad")
 define AM = Character("Aria’s mom")
 define SD = Character("Sam’s dad")
-define ?? = Character("??")
+define BGU = Character("???")
 
 # The game starts here.
 
@@ -25,7 +25,7 @@ label start:
     # directory.
 
     show Aira Supprised
-    a "This is a test."
+    A "This is a test."
 
     # These display lines of dialogue.
 
