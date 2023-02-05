@@ -33,7 +33,7 @@ label start:
     "She sees a clearing in the woods ahead."
     "As she gets to the clearing suddenly her footing is lost. In front of her is a cliff over a lake."
     label first_choice:
-    menu optional_name:
+    menu the_cliff:
         "What should I do?"
         "I could try jumping and swimming ashore. The fall is too big I might not make it!":
             jump jump_and_swim
@@ -85,6 +85,7 @@ label start:
     hide aria
     show aria_supprised at right
     "The tires screech as the man suddenly stops the truck."
+    hide aria
     show aria_confused at right #I need a confused sprite for Aria
     BGU "…….. You really don’t remember me?"
     A "I mean you seem familiar but no. Sorry?"
