@@ -2,13 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 43: expected ':' not found.
-    label stand_and_fight
-                         ^
+The label open_the_box1 is defined twice, at File "game/script.rpy", line 113:
+    label open_the_box1:
+and File "game/script.rpy", line 114:
+    menu open_the_box1:
 
-File "game/script.rpy", line 51: expected ':' not found.
-    label jump_and_swim
-                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Feb  4 17:25:42 2023
+Sun Feb  5 12:17:37 2023
