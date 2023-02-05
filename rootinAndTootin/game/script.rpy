@@ -85,7 +85,7 @@ label start:
     hide aria
     show aria_supprised at right
     "The tires screech as the man suddenly stops the truck."
-    hide aria
+    hide aria_supprised
     show aria_confused at right #I need a confused sprite for Aria
     BGU "…….. You really don’t remember me?"
     A "I mean you seem familiar but no. Sorry?"
@@ -110,19 +110,19 @@ label start:
     S "Or here’s a thought..."
     S "open it?"
 
-    label open_the_box?
-    menu open_the_box?:
+    label choice_open_the_box:
+    menu open_the_box:
         "What should I do?"
         "Leave the chest and skip town.":
             jump options2_choice1
         "Go to the cops":
             jump options2_choice2
-        "Open the box"
+        "Open the box":
             jump options2_choice3
     
-    label options2_choice1
-    label options2_choice2
-    label options2_choice3
+    label options2_choice1:
+    label options2_choice2:
+    label options2_choice3:
     A "Yeah you are right Let's open it."
     "Aria opens the chest"
     A "Well they must be mistaken. This couldn’t have any value could it?"
