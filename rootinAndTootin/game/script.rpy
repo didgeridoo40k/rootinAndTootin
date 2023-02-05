@@ -33,7 +33,7 @@ label start:
     "She sees a clearing in the woods ahead."
     "As she gets to the clearing suddenly her footing is lost. In front of her is a cliff over a lake."
     label first_choice:
-    menu optional_name:
+    menu the_cliff:
         "What should I do?"
         "I could try jumping and swimming ashore. The fall is too big I might not make it!":
             jump jump_and_swim
@@ -62,17 +62,33 @@ label start:
     show aria
     "She moves though the forest at a slower pace, looking out for her pursuers."
     "Aria comes to a road and sees a car passing by."
-    show aria_supprised at right
+    hide aria
     "She waves frantically for help."
+    show aria_supprised at right
     A "Help!"
     "As the vehicle comes to a stop her pursuers catch up to her."
+    hide aria_supprised
     show aria
     "Aria notices the man in the vehicle looks familiar."
-        
+    "The truck screeches to a halt."
+    hide aria
+    show aria at right
+    show sam at left #I need a sprite for Sam
+    BGU "Do you need help?"
+    A "Yes please there are people after me."
+    BGU "Well as sketch as that sounds get in."
+    "The man unlocks the truck door."
+    "Aria gets in the truck."
+    "They drive off quickly."
+    BGU "So Aria? What are you doing here?"
+    A "Ye, yes….. do I know you?"
+    hide aria
+    show aria_supprised at right
+    "The tires screech as the man suddenly stops the truck."
+    hide aria
+    show aria_confused at right #I need a confused sprite for Aria
+    BGU "…….. You really don’t remember me?"
+    A "I mean you seem familiar but no. Sorry?"
 
-    # These display lines of dialogue.
-
-    
-    # This ends the game.
 
     return
