@@ -89,6 +89,47 @@ label start:
     show aria_confused at right #I need a confused sprite for Aria
     BGU "…….. You really don’t remember me?"
     A "I mean you seem familiar but no. Sorry?"
+    BGU "…….ugh I can’t believe you."
+    S "Sam.…..You remember we used to play together as kids?"
+    A "Sam!? Really!? What are you doing I thought you wanted to go live the city life?"
+    "Sam starts the truck again."
+    S "Yeah that's me. Still is but I got some business to take care of."
+    S "I should be the one asking you the questions though."
+    S "What is going on? Why were those people chasing you?"
+    A "I’m not sure. I think they want this though..."
+    "Aria pull out a chest"
+    A "Grams left it for me. It was the last thing she gave me before….."
+    S "I’m sorry for your loss."
+    A "Thanks…. I don’t know what to do now."
+    S "I know what I would do..."
+    "Sam looks at the box."
+    A "I’m not sure. Whatever it is may not be valuable but those guys certainly wanted it."
+    S "Won’t know till we look? Will we?"
+    A "Yeah but I’m not sure it is worth the risk. Maybe I should just chuck it and skip town?"
+    S "That’s one option or we could go to the police?"
+    S "Or here’s a thought..."
+    S "open it?"
+
+    label open_the_box?
+    menu open_the_box?:
+        "What should I do?"
+        "Leave the chest and skip town.":
+            jump options2_choice1
+        "Go to the cops":
+            jump options2_choice2
+        "Open the box"
+            jump options2_choice3
+    
+    label options2_choice1
+    label options2_choice2
+    label options2_choice3
+    A "Yeah you are right Let's open it."
+    "Aria opens the chest"
+    A "Well they must be mistaken. This couldn’t have any value could it?"
+    "Sam glances over and slams on the breaks"
+        
+
+
 
 
     return
