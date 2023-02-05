@@ -1,9 +1,4 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define A = Character("Aria")
+﻿define A = Character("Aria")
 define S = Character("Sam")
 define AD = Character("Aria’s dad")
 define AM = Character("Aria’s mom")
@@ -13,20 +8,13 @@ define BGU = Character("???")
 image aria supprised = "aria_supprised.png"
 image aria smiling = "aria_smiling.png"
 image aria = "aria.png"
+#image open_chest = "openchest.png"
 
-# The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
     scene bg_forest_landscape2
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
     BGU "Quickly! After her!"
     "Aria runs as fast as she can through the woods desperately trying to stay ahead of the men chasing her."
@@ -72,6 +60,7 @@ label start:
     "Aria notices the man in the vehicle looks familiar."
     "The truck screeches to a halt."
     hide aria
+    #scene bg_truck_stops
     show aria at right
     show sam at left #I need a sprite for Sam
     BGU "Do you need help?"
@@ -80,6 +69,7 @@ label start:
     "The man unlocks the truck door."
     "Aria gets in the truck."
     "They drive off quickly."
+    #scene bg_truck_driving_in_woods
     BGU "So Aria? What are you doing here?"
     A "Ye, yes….. do I know you?"
     hide aria
@@ -125,9 +115,33 @@ label start:
     label options2_choice3:
     A "Yeah you are right Let's open it."
     "Aria opens the chest"
+    #show open_chest #need a sprite for this
+    "Inside is a branch."
+    "Aria picks it up."
     A "Well they must be mistaken. This couldn’t have any value could it?"
     "Sam glances over and slams on the breaks"
-        
+    A "Again!? can’t you drive?"
+    "Sam looks at the branch like he just realized something was missing."
+    S "I’m not sure what this is all about..."
+    S "But I have a feeling I know where that goes."
+    A "It goes to a tree….?"
+    S "Yes a tree of course it goes to a tree; but Not just any TREE!"
+    "Sam pulls out a map"
+    S "This tree!"
+    "Sam points at a crude drawing of a branch and an x"
+    A "What is this? Where did you get this?"
+    S "My dad gave it to me before I left for college."
+    S "He said it would be better off far away from here."
+    A "I don’t get it! Why all the mystery who cares about some branch and a tree."
+    S "I’m not sure but I think that's what your granny wanted you to find out."
+    S "I was actually coming back into town to see her. I got a letter from her just the other day."
+    A "You couldn’t have!"
+    A "There is no way..."
+    A "She past away a month ago!"
+    S "So you’re saying someone was pretending to be her?"
+    A "I don’t know, but I don’t think its a coincidence."
+    S "Well I’m sure the end of this map will have some clue."
+    A "I hope you are right so we can get out of this nightmare!"
 
 
 
