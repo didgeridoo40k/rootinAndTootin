@@ -4,10 +4,21 @@ define AD = Character("Aria’s dad")
 define AM = Character("Aria’s mom")
 define SD = Character("Sam’s dad")
 define BGU = Character("???")
+define BG = Character("Bob")
 
 image aria supprised = "aria_supprised.png"
 image aria smiling = "aria_smiling.png"
 image aria = "aria.png"
+image sam = "Sam.png"
+image sam happy = "Sam Happy.png"
+image sam mad = "Sam Mad.png"
+image sam sad = "Sam Sad.png"
+image sam supprised = "Sam Surprised.png"
+image BG = "BG.png"
+image BG angry = "BG Angry.png"
+image BG dead = "bg dead.png"
+image BG supprised = "Sam Surprised.png"
+
 #image open_chest = "openchest.png"
 
 
@@ -31,18 +42,18 @@ label start:
     label stand_and_fight:
     "Aria decides to fight."
     "Aria manages a swift kick on the first man to approach her but the others surround and grab her. "
-    show aria_supprised at right
+    show aria supprised at right
     "Violent murder happens maybe some blood sqleching sounds and a scream *YOU DEAD BITCH*"
     "Game Over"
     return
     
     label jump_and_swim:
-    show aria_supprised at right
+    show aria supprised at right
     "Aria decides to jump."
-    show aria_supprised at right
+    show aria supprised at right
     "Aria crashes into the lake"
     "Aria is finding it hard to keep going, She feels like all the energy is zapped out of her."
-    hide aria_supprised
+    hide aria supprised
     "She needs to power through and continue. She needs to get to safety and find out why this all happened."
     "Aria swims to shore and catches her breath. "
     scene bg_forest_landscape1
@@ -52,10 +63,10 @@ label start:
     "Aria comes to a road and sees a car passing by."
     hide aria
     "She waves frantically for help."
-    show aria_supprised at right
+    show aria supprised at right
     A "Help!"
     "As the vehicle comes to a stop her pursuers catch up to her."
-    hide aria_supprised
+    hide aria supprised
     show aria
     "Aria notices the man in the vehicle looks familiar."
     "The truck screeches to a halt."
@@ -73,10 +84,10 @@ label start:
     BGU "So Aria? What are you doing here?"
     A "Ye, yes….. do I know you?"
     hide aria
-    show aria_supprised at right
+    show aria supprised at right
     "The tires screech as the man suddenly stops the truck."
-    hide aria_supprised
-    show aria_confused at right #I need a confused sprite for Aria
+    hide aria supprised
+    #show aria confused at right #I need a confused sprite for Aria
     BGU "…….. You really don’t remember me?"
     A "I mean you seem familiar but no. Sorry?"
     BGU "…….ugh I can’t believe you."
@@ -562,9 +573,6 @@ label start:
                                 S "Aria. I know with you at my side we can make it!"
                                 A "Oh Sam. Okay. Together."
                                 "Sam stayed in town with Aria. Together the two protected the tree. Protected histroy together. As well as generations after." 
-
-
-
 
 
     return

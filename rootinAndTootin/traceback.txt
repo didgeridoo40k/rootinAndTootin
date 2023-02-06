@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 65, in script
-    a "Help!"
-Exception: Sayer 'a' is not defined.
+  File "game/script.rpy", line 90, in script
+    show aria confused at right #I need a confused sprite for Aria
+Exception: Image 'aria' does not accept attributes 'confused'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 65, in script
-    a "Help!"
-  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'a' is not defined.
+  File "game/script.rpy", line 90, in script
+    show aria confused at right #I need a confused sprite for Aria
+  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/display/image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/display/core.py", line 397, in _duplicate
+    args.extraneous()
+  File "/home/aaron/Documents/coding/renpy-8.0.3-sdk/renpy/display/core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'aria' does not accept attributes 'confused'.
 
 Linux-5.15.0-58-generic-x86_64-with-glibc2.35 x86_64
 Ren'Py 8.0.3.22090809
 rootinAndTootin 1.0
-Sat Feb  4 17:34:45 2023
+Sun Feb  5 18:21:37 2023
