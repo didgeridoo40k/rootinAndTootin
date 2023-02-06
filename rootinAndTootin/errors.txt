@@ -1,0 +1,12 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+The label open_the_box1 is defined twice, at File "game/script.rpy", line 113:
+    label open_the_box1:
+and File "game/script.rpy", line 114:
+    menu open_the_box1:
+
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sun Feb  5 12:17:37 2023
